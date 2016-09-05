@@ -1,0 +1,109 @@
+#comp_engagement,
+#comp_reach {
+    margin-top: 10px;
+    background-color: #2C3546;
+    overflow: auto;
+}
+
+#comp_audience {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
+.pieChart {
+    background-color: #2C3546;
+    margin-bottom: 5px;
+    fill: white;
+}
+
+.c3-chart-arcs-title{
+    font-family: 'Yanone Kaffeesatz', serif;
+    font-size: 18px !important;
+}
+
+.axis,
+.domain,
+.legend {
+    fill: white;
+    font-size: 10px;
+
+}
+
+tspan {
+    font-size: 8px;
+    font-family: 'Montserrat', serif;
+}
+
+#comp_engagement_reach path.domain {
+    stroke: white;
+}
+
+.domain {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+#multiPlat_comp_engagement,
+#multiPlat_comp_reach {
+    text-align: center;
+}
+
+.titles {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Yanone Kaffeesatz', serif;
+
+}
+
+
+/*-------------------------pie charts------------------*/
+
+
+.pieChart{
+  text-align: center;
+  font-size: 7px;
+  font-family: 'Yanone Kaffeesatz', serif;
+}
+
+
+/*----------------tool tip------------------------*/
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    font-family: 'Montserrat', serif;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+
+/* Creates a small triangle extender for the tooltip */
+
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+
+/* Style northward tooltips differently */
+
+.d3-tip.n:after {
+    margin: -3px 0 0 0;
+    top: 100%;
+    left: 0;
+}

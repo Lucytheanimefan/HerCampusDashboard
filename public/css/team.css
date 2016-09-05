@@ -1,0 +1,34 @@
+#leftColumn,
+#rightColumn {
+    /*background-color: #2C3546; */
+    height: 100%;
+}
+
+.svg-container {
+    margin-top: 10px;
+    background-color: #2C3546;
+}
+
+text {
+    font-family: 'Montserrat', serif;
+
+}
+
+.teamSizeText,.activeChText,.teamMemText {
+    font-family: 'Yanone Kaffeesatz', serif;
+    transform: scale(1.5, 1);
+    /* W3C */
+    -webkit-transform: scale(1.5, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.5, 1);
+    /* Firefox */
+    -ms-transform: scale(1.5, 1);
+    /* IE 9 */
+    -o-transform: scale(1.5, 1);
+    /* Opera */
+    font-weight: 100 !important;
+}
+
+.teamSizeTitles{
+	font-weight: bold;
+}

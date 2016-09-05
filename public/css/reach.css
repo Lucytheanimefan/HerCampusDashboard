@@ -1,0 +1,115 @@
+/*Main stuff*/
+
+body,
+html,
+.container-fluid {
+    height: 100%;
+}
+
+
+/*Multiplatform view graph*/
+
+h1 {
+    font-family: 'Yanone Kaffeesatz', serif;
+    text-align: center;
+    margin-top: 80px;
+}
+
+path.domain {
+    stroke: white;
+}
+
+#multiplatformViews {
+    background-color: #2C3546;
+    font-family: 'Yanone Kaffeesatz', serif;
+    margin-left: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    width: 48%;
+    height: 100%;
+}
+
+.axis path {
+    fill: none;
+    stroke: white;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 11px;
+}
+
+.domain {
+    fill: none;
+    stroke: white !important;
+}
+
+tspan,
+.c3-legend-item text {
+    fill: white;
+}
+
+.c3-axis-x-label {
+    stroke: white !important;
+    stroke-width: 2 !important;
+}
+
+text {
+    fill: white !important;
+}
+
+#socialBlock,
+#multiplatformTitle,
+#collegeBlock,
+#multiBlock {
+    font-family: 'Yanone Kaffeesatz', serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    margin-top: 7%;
+}
+
+#multiplatformTitle,
+#collegeBlock,
+#multiBlock {
+    vertical-align: middle;
+}
+
+
+/* Social media reach */
+
+#socialMediaReach,
+#collegeStudentReach,
+#MonthlyMultiPlatformViews {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    height: 100%;
+    width: 48%;
+    background-color: #2C3546;
+}
+
+#collegeBlock,
+#multiBlock {
+    margin-top: 50px;
+    margin-left: 50px;
+    text-justify: auto;
+}
+
+span {
+    color: white;
+}
+
+.imageAndCount {
+    margin-left: 40%;
+}
+
+.svg_image {
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+    position: relative;
+}

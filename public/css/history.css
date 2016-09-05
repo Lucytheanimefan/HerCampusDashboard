@@ -1,0 +1,127 @@
+#totalMonthlyViews,
+#chapterGrowth,
+#newsletterSubscribers,
+#monthlyUniques,
+#nationalChapterReach {
+    background-color: #2C3546;
+    margin-bottom: 10px;
+}
+
+#monthlyUniques,
+#nationalChapterReach {
+    margin-right: 10px;
+}
+
+#totalMonthlyViews,
+#chapterGrowth,
+#newsletterSubscribers {
+    text-align: right;
+}
+
+.right {
+    text-align: center;
+}
+
+.right .line {
+    stroke: rgb(252, 189, 18);
+    stroke-width: 2;
+    fill: none;
+}
+
+#chapterGrowth .right .line {
+    stroke: rgb(252, 189, 18);
+    stroke-width: 2;
+    fill: none;
+}
+
+.right .line #totalMonthlyViews {
+    stroke: rgb(102, 64, 204);
+}
+
+.right .line #newsletterSubscribers {
+    stroke: rgb(255, 0, 102);
+}
+
+.right .axis {
+    shape-rendering: crispEdges;
+}
+
+.right .x.axis line {
+    stroke: rgba(88, 89, 93, .12);
+}
+
+.right .x.axis .minor {
+    stroke-opacity: .5;
+}
+
+.right .x.axis path {
+    display: none;
+}
+
+.right .y.axis line,
+.y.axis path {
+    fill: none;
+    stroke: rgba(88, 89, 93, .5);
+}
+
+.right .axis path,
+.right .axis line {
+    fill: none;
+    stroke: rgba(88, 89, 93, .3);
+    shape-rendering: crispEdges;
+    font-family: 'Montserrat', serif;
+}
+
+.right .axis text {
+    font-size: 10px;
+    fill: white;
+    font-family: 'Montserrat', serif;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', serif;
+    font-size: 18px;
+}
+
+.c3-chart-lines,
+.c3-shapes {
+    fill: none !important;
+
+}
+
+.c3-tooltip {
+
+}
+
+.domain,
+.c3-axis-x-label {
+    stroke: white !important;
+    stroke-width: 2 !important;
+    font-family: 'Montserrat', serif;
+}
+
+.tick {
+    fill: white;
+}
+
+.c3-axis {
+    visibility: none;
+}
+
+.c3-legend-item text{
+  fill: white !important;
+}
+
+
+
+.svg_image{
+    float: left;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.chart{
+    float: right;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/competitor.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/d3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <title>Her Campus Dashboard</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <div class="Overview"><span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>COMPETITOR OVERVIEW</div>
+    <div id="tabs">
+        <ul class="nav nav-tabs navbar-fixed-bottom">
+            <li class="audience"><a href="audience.html">AUDIENCE</a></li>
+            <li class="reach"><a href="reach.html">REACH</a></li>
+            <li class="engagement"><a href="engagement.html">ENGAGEMENTS</a></li>
+            <li class="team"><a href="team.html">TEAM</a></li>
+            <li class="product"><a href="history.html">HISTORY</a></li>
+            <li class="competitors active"><a href="competitor.html">COMPETITORS</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid" id="main">
+        <div id="comp_audience" class="col-sm-6" style="background-color: #2C3546;">
+            <div class="row row-eq-height">
+                <div class="col-sm-6">
+                    <div id="pieChart_0" class="pieChart"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="pieChart_1" class="pieChart"></div>
+                </div>
+            </div>
+            <div class="row row-eq-height">
+                <div class="col-sm-6">
+                    <div id="pieChart_2" class="pieChart"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="pieChart_3" class="pieChart"></div>
+                </div>
+            </div>
+            <div class="row row-eq-height">
+                <div class="col-sm-6">
+                    <div id="pieChart_4" class="pieChart"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="pieChart_5" class="pieChart"></div>
+                </div>
+            </div>
+        </div>
+        <div id="comp_engagement_reach" class="col-sm-6">
+            <div class="row row-eq-height" id="comp_engagement"></div>
+            <div class="row row-eq-height" id="comp_reach"></div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.1.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/c3.min.js"></script>
+    <script type="text/javascript" src="js/competitor.js"></script>
+</body>
+
+</html>

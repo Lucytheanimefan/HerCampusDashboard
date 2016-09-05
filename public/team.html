@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+    <!--<link rel="stylesheet" type="text/css" href="css/jquery.timelineMe.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Her Campus Dashboard</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <form id="form">
+        Total HCM Team Size:
+            <textarea form="form" id="teamSize" placeholder="Enter counts separated by commas ie. 1,2,3,4,5"></textarea>
+            <br> Total Active Chapters:
+            <input type="text" id="activeCh" placeholder="Enter counts separated by commas ie. 1,2,3,4,5">
+            <br>Overall Average # Team Members:
+            <input type="text" id="avgNum" placeholder="Enter counts separated by commas ie. 1,2,3,4,5">
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <div class="Overview"><span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>TEAM OVERVIEW</div>
+    <div id="tabs">
+        <ul class="nav nav-tabs navbar-fixed-bottom">
+            <li class="audience"><a href="audience.html">AUDIENCE</a></li>
+            <li class="reach"><a href="reach.html">REACH</a></li>
+            <li class="engagement"><a href="engagement.html">ENGAGEMENTS</a></li>
+            <li class="team active"><a href="team.html">TEAM</a></li>
+            <li class="product"><a href="history.html">HISTORY</a></li>
+            <li class="competitors"><a href="competitor.html">COMPETITORS</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid" id="main">
+        <div class="col-sm-6">
+            <div id="leftColumn"></div>
+        </div>
+        <div id="rightColumn" class="col-sm-6">
+            <div class="row row-eq-height right">
+                <div id="activeChapters"></div>
+            </div>
+            <div class="row row-eq-height right">
+                <div id="teamMembers"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.1.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.timelineMe.js"></script>-->
+    <script src="js/team.js"></script>
+</body>
+
+</html>

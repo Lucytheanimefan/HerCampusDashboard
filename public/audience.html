@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/audience.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Her Campus Dashboard</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <form id="form">
+            % of Site Traffic (mobile, desktop, tablet):
+            <textarea form="form" id="siteTrafficPerc" placeholder="Enter % separated by commas ie. 1,2,3,4,5"></textarea>
+            <br> Newsletter Subscribers
+            <input type="text" id="newsletterSubs" placeholder="Newsletter Subscriber">
+            <br>Total Audience
+            <input type="text" id="totalAudience" placeholder="Total Audience">
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <div class="Overview"><span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>AUDIENCE OVERVIEW</div>
+    <div id="embed-api-auth-container"></div>
+    <div id="tabs" class="container-fluid">
+        <ul class="nav nav-tabs navbar-fixed-bottom">
+            <li class="audience active"><a href="audience.html">AUDIENCE</a></li>
+            <li class="reach"><a href="reach.html">REACH</a></li>
+            <li class="engagement"><a href="engagement.html">ENGAGEMENTS</a></li>
+            <li class="team"><a href="team.html">TEAM</a></li>
+            <li class="product"><a href="history.html">HISTORY</a></li>
+            <li class="competitors"><a href="competitor.html">COMPETITORS</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid" id="main">
+        <div class="col-md-6">
+            <div class="row-fluid" id="monthlyUniquesdiv">
+                <!--<div id="monthlyUniquesdiv"></div>-->
+            </div>
+            <div class="row-fluid" id="socialmediareach">
+                <!--<div id="socialmediareach"></div>-->
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row" id="deviceTraffic">
+                <div id="deviceImages">
+                    <div id="mobilePercent" class="devices"><img src="css/Images/Audience_Mobile.svg" id="audienceMobile" width="50%" height="50%"></div>
+                    <div id="desktopPercent" class="devices"><img src="css/Images/Audience_Desktop.svg" id="audienceDesktop" width="70%" height="70%"></div>
+                    <div id="tabletPercent" class="devices"> <img src="css/Images/Audience_Tablet.svg" id="audienceTablet" width="60%" height="60%"></div>
+                    <span id="trafficTitle"><br><br><br>% OF SITE TRAFFIC<br>PER DEVICE</span>
+                </div>
+            </div>
+            <div class="row" id="chapterPresence">
+                <h1>CHAPTER PRESENCE</h1>
+                <img src="css/Images/map.png" style="max-width:100%; max-height:100%;">
+            </div>
+            <div class="row">
+                <div class="col-sm-6" id="newsletter" style = "width: 48%;">
+                    <!--<div id="newsletter">-->
+                        <h1>NEWSLETTER SUBSCRIBERS</h1>
+                        <div id="newletterSubscribers">
+                            <img src="css/Images/Audience_Newsletter.svg" id="newsletterImage" class="svg_image" height="25%" width="25%">
+                        </div>
+                    <!--</div>-->
+                </div>
+                <div class="col-sm-6" id="Total-audience" style = "width: 48%;">
+                   
+                        <h1>TOTAL AUDIENCE</h1>
+                        <div id="audienceCount"></div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div id="newsletter" class="col-sm-3">
+                <h1>NEWSLETTER SUBSCRIBERS</h1>
+                <img src="css/Images/Audience_Newsletter.svg" id="newsletterImage" class="svg_image" height="100" width="120">
+                <span>233,817 <br>Subscribers</span>
+            </div>
+            <div id="Total-audience" class="col-sm-3">
+                <h1>TOTAL AUDIENCE</h1>
+            </div>
+        </div>
+    </div>-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/c3.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="js/audience.js"></script>
+</body>
+
+</html>

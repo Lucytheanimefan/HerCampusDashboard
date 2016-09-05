@@ -1,0 +1,195 @@
+head{
+	background-color: #262C3A;
+}
+
+head, html, body{
+	background-color: #262C3A;
+}
+
+.container-fluid, .row{
+	background-color: #262C3A;
+}
+
+@media screen and (max-width: 600px) {
+	#one { 
+		float: none;
+		margin-right:0;
+		width:auto;
+		border:0;
+		border-bottom:2px solid #000;    
+	}
+}
+
+
+.Overview{
+	width: 100%;
+	background-color: #D5E5EE;
+	text-align: center;
+	/* font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; */
+	font-family: 'Yanone Kaffeesatz', serif;
+}
+
+/*-----------------------tab bar-------------------------------*/
+#tabs{
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+	font-family: 'Yanone Kaffeesatz', serif;
+}
+
+#tabs ul {
+	list-style: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0; 
+}
+
+#tabs li {
+	float: left;
+	width: 16.66%; 
+}
+
+#tabs li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+
+	border-right: 1px solid #ccc; 
+}
+
+/*
+#nav li:first-child a {
+	border-left: 1px solid #ccc; 
+}
+*/
+#nav li a:hover {
+	color: #c00;
+	/* background-color: #fff; */
+
+}
+
+li.active{
+	font-weight: bolder;
+}
+
+.nav-tabs a{
+	color: white;
+}
+
+.nav-tabs .audience{
+	background-color: #FF0066;
+}
+
+.nav-tabs .reach{
+	background-color: #00D6C2;
+}
+
+.nav-tabs .engagement{
+	background-color: #FCBD12;
+}
+
+.nav-tabs .team{
+	background-color: #6640CC;
+}
+
+.nav-tabs .product{
+	background-color: #FF0066;
+}
+
+.nav-tabs .competitors{
+	background-color: #00D6C2;
+}
+
+
+
+/*-------------------side nav-------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.hamburger{
+	color: black;
+	font-size: 12px !important;
+	float: left;
+	margin-left: 5px;
+}
+
+/*-----------------form------------------------*/
+textarea, input[type=text], select {
+	color: black !important;
+    width: 90%;
+    padding: 8px 20px;
+    margin: 0px 0px 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 90%;
+    background-color: #00D6C2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+form{
+	color: white;
+	text-align:center;
+}
+
+
+
+</style>
+<body>
