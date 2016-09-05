@@ -1,9 +1,13 @@
 {
   "name": "hercampus-dashboard",
   "version": "1.0.0",
+  "engines": {
+    "node": "5.5.0"
+  },
   "description": "A stats dashboard created for Her Campus Media ",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lucy Zhang",
