@@ -22,7 +22,7 @@ app.use("/", serveIndex("public"));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3000 || process.env.PORT);
+app.listen(process.env.PORT || 3000);
 /*
 connect().use(serveStatic('./public')).listen(8080, function() {
     console.log('Server running on 8080...');
@@ -78,4 +78,3 @@ http.createServer(function(req, res) {
 
 
 /*-----------------Google Analytics-------------------*/
-*/
