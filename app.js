@@ -30,6 +30,7 @@ connect().use(serveStatic('./public')).listen(8080, function() {
 
 */
 
+/*
 var config = {
     "consumerKey": "uwAcM2cGOqcuslNIFHgYoyJRL",
     "consumerSecret": "aV03HYizmS1vmMJ5dZROeVVcXQWGMiq48CsTgFGCZK1xiahRBx",
@@ -66,7 +67,7 @@ twitter.getReTweetsOfMe({
 twitter.getTweet({
     id: '1111111111'
 }, error, success);
-
+*/
 
 /*
 http.createServer(function(req, res) {
@@ -74,4 +75,7 @@ http.createServer(function(req, res) {
 }).listen(8070);
 */
 
+
+
 /*-----------------Google Analytics-------------------*/
+*/
