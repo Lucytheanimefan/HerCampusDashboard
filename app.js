@@ -22,7 +22,7 @@ app.use("/", serveIndex("public"));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(3000);
+app.listen(3000 || process.env.PORT);
 /*
 connect().use(serveStatic('./public')).listen(8080, function() {
     console.log('Server running on 8080...');
